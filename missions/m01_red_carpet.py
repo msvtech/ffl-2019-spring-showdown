@@ -21,9 +21,9 @@ rotate = 135.0 / 90.0
 def m01_red_carpet():
     # ####################################
     # Mission 1 - Traverse the Red Carpet
-    # ####################################
+    # ##################################
 
-    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 17.6, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -48, brake=True)
 
 if __name__ == '__main__':
     m01_red_carpet()
