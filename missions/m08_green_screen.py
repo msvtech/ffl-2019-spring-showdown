@@ -27,3 +27,13 @@ def m08_green_screen():
 
 if __name__ == '__main__':
     m08_green_screen()
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 32.5654210982426, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 400, brake=True)
+    front_motor.on(speed=SpeedPercent(-20))
+    time.sleep(0.5)
+    front_motor.off()
+
+    front_motor.on(speed=SpeedPercent(20))
+    time.sleep(0.5)
+    front_motor.off()
+    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 490, brake=True)

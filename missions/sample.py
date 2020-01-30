@@ -1,8 +1,8 @@
 
-
+    front_motor.on(speed=SpeedPercent(40))
     time.sleep(0.5)
     front_motor.off()
-    front_motor.on(speed=SpeedPercent(40))
+
 
     # Drive Forward
     tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 17.6, brake=True)
