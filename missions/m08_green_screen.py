@@ -36,4 +36,4 @@ if __name__ == '__main__':
     front_motor.on(speed=SpeedPercent(20))
     time.sleep(0.5)
     front_motor.off()
-    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 490, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 500, brake=True)
