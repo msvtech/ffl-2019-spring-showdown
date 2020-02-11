@@ -23,6 +23,10 @@ def m07_cgi():
     # Mission 7 - Convert to CGI
     # ####################################
 
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 23.0, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-50), SpeedPercent(50), rotate * 140, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 64.0, brake=True)
+
     top_motor.off()
     top_motor.on(speed=SpeedPercent(50))
     time.sleep(0.5)
