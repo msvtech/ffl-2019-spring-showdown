@@ -25,22 +25,28 @@ def m08_green_screen():
 
 
 
-    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 32.765, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 400, brake=True)
-    front_motor.on(speed=SpeedPercent(-20))
-    time.sleep(0.5)
+    # tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * 31.756, brake=True)
+    # tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 424, brake=True)
+    # front_motor.on(speed=SpeedPercent(-20))
+    # time.sleep(0.5)
+    # front_motor.off()
+
+    # front_motor.on(speed=SpeedPercent(20))
+    # time.sleep(0.5)
+    # front_motor.off()
+    # tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 540, brake=True)
+
+    front_motor.on(speed=SpeedPercent(-10))
+    time.sleep(0.25)
     front_motor.off()
 
-    front_motor.on(speed=SpeedPercent(20))
-    time.sleep(0.5)
-    front_motor.off()
-    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 560, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 16, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * -240, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 6, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 70.75, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 10, brake=True)
-    front_motor.on(speed=SpeedPercent(20))
+    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 105, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 15, brake=True)
+
+    front_motor.on(speed=SpeedPercent(-100))
     time.sleep(0.5)
     front_motor.off()
 
