@@ -1,6 +1,6 @@
 #!/usr/bin/env micropython
 
-from ev3dev2.motor import LargeMotor, MediumMotor, SpeedPercent, MoveTank, OUTPUT_A, OUTPUT_B, OUTPUT_C # , OUTPUT_D
+from ev3dev2.motor import LargeMotor, MediumMotor, SpeedPercent, MoveTank, OUTPUT_A, OUTPUT_B # , OUTPUT_C # , OUTPUT_D
 from ev3dev2.sensor.lego import TouchSensor #,  GyroSensor, ColorSensor
 # from ev3dev2.led import Leds
 import time
@@ -9,7 +9,7 @@ import time
 # import sys
 
 tank_drive = MoveTank(OUTPUT_A, OUTPUT_B)
-front_motor = MediumMotor(OUTPUT_C)
+# front_motor = MediumMotor(OUTPUT_C)
 # top_motor = MediumMotor(OUTPUT_D)
 # gs = GyroSensor()
 # leds = Leds()
@@ -23,7 +23,9 @@ def m03_costume():
     # Mission 3 - Wear Your Costume
     # ####################################
 
-    time.sleep(0.25)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 9.655, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 82, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 80, brake=True)
 
 if __name__ == '__main__':
     m03_costume()
