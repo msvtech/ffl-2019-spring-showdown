@@ -22,9 +22,13 @@ def m10_dress_the_set():
     # ####################################
     # Mission 10 Dress The Set
     # ####################################
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 19, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11.75, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 90, brake=True) # 105
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 43., brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-10), SpeedPercent(10), rotate * -90, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 21., brake=True)
     time.sleep(0.25)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * -19, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -21, brake=True)
 
 if __name__ == '__main__':
     m10_dress_the_set()
