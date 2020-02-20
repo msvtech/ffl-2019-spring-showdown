@@ -1,6 +1,6 @@
 #!/usr/bin/env micropython
 
-from ev3dev2.motor import LargeMotor, MediumMotor, SpeedPercent, MoveTank, OUTPUT_A, OUTPUT_B # , OUTPUT_C # , OUTPUT_D
+from ev3dev2.motor import LargeMotor, MediumMotor, SpeedPercent, MoveTank, OUTPUT_A, OUTPUT_B #, OUTPUT_C # , OUTPUT_D
 from ev3dev2.sensor.lego import TouchSensor #,  GyroSensor, ColorSensor
 # from ev3dev2.led import Leds
 import time
