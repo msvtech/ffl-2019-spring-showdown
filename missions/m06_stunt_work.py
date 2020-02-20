@@ -23,9 +23,11 @@ def m06_stunt_work():
     # Mission 6 - Stunt Work
     # ####################################
 
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 9.655, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 82, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 80, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11.75, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 89, brake=True) # 105
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 55., brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * -45, brake=True) # 105
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 15., brake=True)
 
 if __name__ == '__main__':
     m06_stunt_work()

@@ -22,8 +22,11 @@ def m11_deliver_the_movie():
     # ####################################
     # Mission 11 - Deliver The Movie
     # ####################################
-
-    time.sleep(0.25)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11.75, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 89, brake=True) # 105
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 56., brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 48, brake=True) # 105
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 15., brake=True)
 
 if __name__ == '__main__':
     m11_deliver_the_movie()
