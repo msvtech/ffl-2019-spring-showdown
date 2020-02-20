@@ -30,7 +30,6 @@ def m07_cgi():
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 9.75, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 110, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 1.0, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 59.5, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * -90, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 15.5, brake=True)
