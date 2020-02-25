@@ -16,7 +16,7 @@ tank_drive = MoveTank(OUTPUT_A, OUTPUT_B)
 ts = TouchSensor()
 
 ratio_degrees_to_inches = 360 / 8.44
-rotate = 140.0 / 90.0 # 135.0
+rotate = 140.0 / 90.0
 
 def m07_cgi():
     # ####################################
@@ -25,10 +25,14 @@ def m07_cgi():
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11.75, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 92, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 39.5, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * -56, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 43, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * -59, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * 26., brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(100), rotate * -180, brake=True)
+
+    tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * -26., brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 56, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * -43, brake=True)
 
     # tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 1.0, brake=True)
     # tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 360, brake=True)
