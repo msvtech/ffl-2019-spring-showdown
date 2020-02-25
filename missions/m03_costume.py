@@ -24,7 +24,7 @@ def m03_costume():
     # ####################################
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 9.655, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 82, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 106.2, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 80, brake=True)
 
 if __name__ == '__main__':
