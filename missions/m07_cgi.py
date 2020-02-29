@@ -25,31 +25,14 @@ def m07_cgi():
 
     tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11.75, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 92, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 43, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 44, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * -59, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * 26., brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(100), rotate * -180, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-100), SpeedPercent(100), rotate * -360, brake=True)
 
-    tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * -26., brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 56, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * -43, brake=True)
-
-    # tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 1.0, brake=True)
-    # tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 360, brake=True)
-    # time.sleep(0.5)
-    # tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * -360, brake=True)
-
-    #tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 9.75, brake=True)
-    #tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 110, brake=True)
-    #tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 59.5, brake=True)
-    #tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * -90, brake=True)
-    #tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 15.5, brake=True)
-    #tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 280, brake=True)
-
-    # top_motor.off()
-    # top_motor.on(speed=SpeedPercent(50))
-    # time.sleep(0.5)
-    # top_motor.off()
+    tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * 26., brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * -120, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 55, brake=True)
 
 if __name__ == '__main__':
     m07_cgi()

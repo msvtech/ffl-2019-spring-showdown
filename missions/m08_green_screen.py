@@ -35,7 +35,7 @@ def m08_green_screen():
     time.sleep(0.5)
     front_motor.off()
     tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 460, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * -40, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * -20, brake=True)
     #front_motor.on(speed=SpeedPercent(-10))
     #time.sleep(0.25)
     #front_motor.off()
