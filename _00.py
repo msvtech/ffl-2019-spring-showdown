@@ -23,7 +23,7 @@ def main(startAt):
     if startAt <=  2 : wait_for_button_with_message('Green Screen');    m08_green_screen()
     if startAt <=  3 : wait_for_button_with_message('Deliver Movie');   m11_deliver_the_movie()
     if startAt <=  4 : wait_for_button_with_message('Dress Set');       m10_dress_the_set()
-    if startAt <=  5 : wait_for_button_with_message('CGI');             m07_cgi()
+    # if startAt <=  5 : wait_for_button_with_message('CGI');             m07_cgi()
     if startAt <=  6 : wait_for_button_with_message('Stunt Work');      m06_stunt_work()
     if startAt <=  7 : wait_for_button_with_message('Costume');         m03_costume()
     # if startAt <=  8 : wait_for_button_with_message('Boom');            m02_microphone_boom()
