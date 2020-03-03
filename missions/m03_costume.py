@@ -23,9 +23,9 @@ def m03_costume():
     # Mission 3 - Wear Your Costume
     # ####################################
 
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 9.655, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 106.2, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(60), SpeedPercent(60), ratio_degrees_to_inches * 80, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 9.655, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 107, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(70), SpeedPercent(70), ratio_degrees_to_inches * 80, brake=True)
 
 if __name__ == '__main__':
     m03_costume()

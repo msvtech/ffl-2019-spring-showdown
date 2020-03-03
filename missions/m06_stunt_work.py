@@ -23,15 +23,15 @@ def m06_stunt_work():
     # Mission 6 - Stunt Work
     # ####################################
 
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 11.75, brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 89, brake=True) # 105
-    tank_drive.on_for_degrees(SpeedPercent(30), SpeedPercent(30), ratio_degrees_to_inches * 55., brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 11.75, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 92, brake=True) # 105
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 53.5, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * -45, brake=True) # 105
-    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 20., brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * 13.25, brake=True)
 
-    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -20., brake=True)
-    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 45, brake=True) # 105
-    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -60., brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -14.25, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 57, brake=True) # 105
+    tank_drive.on_for_degrees(SpeedPercent(100), SpeedPercent(100), ratio_degrees_to_inches * -70., brake=True)
 
 if __name__ == '__main__':
     m06_stunt_work()
