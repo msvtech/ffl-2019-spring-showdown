@@ -19,7 +19,7 @@ ratio_degrees_to_inches = 360 / 8.44
 rotate = 135.0 / 90.0
 
 def m08_green_screen():
-    # ####################################6
+    # ####################################
     # Mission 8 - Act In Front of the Green Screen
     # ####################################
 
@@ -34,7 +34,7 @@ def m08_green_screen():
     front_motor.on(speed=SpeedPercent(20))
     time.sleep(0.5)
     front_motor.off()
-    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 452.6, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-30), SpeedPercent(30), rotate * 450, brake=True)
     tank_drive.on_for_degrees(SpeedPercent(40), SpeedPercent(40), ratio_degrees_to_inches * -20, brake=True)
     #front_motor.on(speed=SpeedPercent(-10))
     #time.sleep(0.25)
