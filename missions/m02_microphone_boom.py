@@ -23,7 +23,11 @@ def m02_microphone_boom():
     # Mission 2 - Turn the Microphone Boom
     # ####################################
 
-    time.sleep(0.25)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 11.75, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * 92, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 2, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(-15), SpeedPercent(15), rotate * -92, brake=True)
+    tank_drive.on_for_degrees(SpeedPercent(50), SpeedPercent(50), ratio_degrees_to_inches * 21.0, brake=True)
 
 if __name__ == '__main__':
     m02_microphone_boom()
